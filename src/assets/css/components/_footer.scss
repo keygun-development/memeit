@@ -1,0 +1,11 @@
+.sticky-footer-bar {
+  position: absolute;
+  bottom: 0;
+  background-color: #448aff;
+  z-index: 10;
+  width: 100%;
+
+  .md-button-content {
+    color: #fff;
+  }
+}

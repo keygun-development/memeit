@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Sandtornado",
+      "imageUrl": "https://i.kym-cdn.com/entries/icons/mobile/000/029/036/800x450thumb.jpg",
+      "type": "memes",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "id": 2,
+      "name": "Golf fail",
+      "imageUrl": "https://c.tenor.com/FIZ7_O8GWtUAAAAd/golf-fail.gif",
+      "type": "fails",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "id": 3,
+      "name": "Twitters meme",
+      "imageUrl": "https://i.kym-cdn.com/entries/icons/mobile/000/034/111/twitter.jpg",
+      "type": "tweets",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "id": 4,
+      "name": "Twitters meme",
+      "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNheeKVVILv0BTAE-OCmQMnuu1VFkNXmNskAu3c=w768-h768-n-o-v1",
+      "type": "memes",
+      "likes": 0,
+      "dislikes": 0
+    }
+  ]
+}
