@@ -61,15 +61,18 @@ self.addEventListener("fetch", (event) => {
         event.respondWith(
             (async () => {
                 try {
+                    const cache = await caches.open(CACHE_NAME);
+                    const cachedResponse = await cache.match(OFFLINE_URL);
+                    return cachedResponse;
                     // First, try to use the navigation preload response if it's supported.
-                    const preloadResponse = await event.preloadResponse;
-                    if (preloadResponse) {
-                        return preloadResponse;
-                    }
-
-                    // Always try the network first.
-                    const networkResponse = await fetch(event.request);
-                    return networkResponse;
+                    // const preloadResponse = await event.preloadResponse;
+                    // if (preloadResponse) {
+                    //     return preloadResponse;
+                    // }
+                    //
+                    // // Always try the network first.
+                    // const networkResponse = await fetch(event.request);
+                    // return networkResponse;
                 } catch (error) {
                     // catch is only triggered if an exception is thrown, which is likely
                     // due to a network error.
