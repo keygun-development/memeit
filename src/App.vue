@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <div v-if="offline">
+      Je bent offline
+    </div>
     <top-bar
     :menu-icon="'menu'"
     :menu-title="'Home'"
@@ -58,6 +61,7 @@ export default {
       objects: objects,
       selectedObject: [],
       opened: false,
+      offline: false,
       openedIcons: [
         {
           "icon": "thumb_up",
@@ -88,6 +92,14 @@ export default {
   components: {
     FooterTabs,
     TopBar
+  },
+
+  mounted() {
+    /* eslint-disable */
+    fetch('https://www.google.com')
+    .catch(error => {
+      this.offline = true;
+    })
   },
 
   methods: {

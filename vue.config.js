@@ -1,7 +1,7 @@
 module.exports = {
   pwa: {
     name: 'Memeit',
-    themeColor: '#4DBA87',
+    themeColor: '#000000',
     msTileColor: '#000000',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black',
