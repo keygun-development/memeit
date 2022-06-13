@@ -96,7 +96,7 @@ export default {
 
   mounted() {
     /* eslint-disable */
-    fetch('https://www.google.com')
+    fetch('https://kaleidoscopic-sprite-d4842b.netlify.app/')
     .catch(error => {
       this.offline = true;
     })
