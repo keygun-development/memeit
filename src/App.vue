@@ -94,14 +94,6 @@ export default {
     TopBar
   },
 
-  mounted() {
-    /* eslint-disable */
-    fetch('https://kaleidoscopic-sprite-d4842b.netlify.app/')
-    .catch(error => {
-      this.offline = true;
-    })
-  },
-
   methods: {
 
     openSheet: function (object) {
