@@ -6,9 +6,6 @@
     :icon-right-first="'search'"
     :icon-right-second="'more_vert'"
     ></top-bar>
-    <a href="/downloads/Memeit.apk">
-      Download apk
-    </a>
     <md-tabs class="md-transparent" md-alignment="fixed">
       <md-tab @click="selected = 'memes'" id="tab-home" md-label="Memes"></md-tab>
       <md-tab @click="selected = 'fails'" id="tab-pages" md-label="Fails"></md-tab>
