@@ -26,9 +26,49 @@
     },
     {
       "id": 4,
-      "name": "Twitters meme",
+      "name": "Pluiskoe",
       "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipNheeKVVILv0BTAE-OCmQMnuu1VFkNXmNskAu3c=w768-h768-n-o-v1",
       "type": "memes",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "id": 5,
+      "name": "Ben niet snap",
+      "imageUrl": "/img/json.png",
+      "type": "memes",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "id": 6,
+      "name": "One does not",
+      "imageUrl": "/img/onedoesnot.jpg",
+      "type": "memes",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "id": 7,
+      "name": "Pika surprised",
+      "imageUrl": "/img/pika.gif",
+      "type": "memes",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "id": 8,
+      "name": "Hit the haybale",
+      "imageUrl": "/img/haybale.gif",
+      "type": "fails",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "id": 9,
+      "name": "Tronald Dump",
+      "imageUrl": "/img/tronalddump.jpg",
+      "type": "tweets",
       "likes": 0,
       "dislikes": 0
     }

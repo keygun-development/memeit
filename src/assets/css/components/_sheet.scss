@@ -13,5 +13,7 @@
   &.active {
     left: 0;
     transition: .3s;
+    height: 100%;
+    overflow-y: hidden;
   }
 }

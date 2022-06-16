@@ -1,3 +1,10 @@
+body {
+  &.disable-scroll {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
 .md-drawer {
   width: 200px;
 }

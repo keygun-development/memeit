@@ -39,6 +39,10 @@
           :icon-right-second="'more_vert'"
       ></top-bar>
       <img :src="selectedObject.imageUrl" />
+      <footer-tabs
+          :icons="opened ? openedIcons : closedIcons"
+          :object-id="selectedObject.id"
+      ></footer-tabs>
     </div>
     <footer-tabs
         :icons="opened ? openedIcons : closedIcons"
@@ -99,11 +103,14 @@ export default {
     openSheet: function (object) {
       this.opened = true
       this.selectedObject = object
+      document.body.classList.add('disable-scroll')
+      window.scrollTo(0,0);
     },
 
     closeSheet: function () {
       this.opened = false
       this.selectedObject = []
+      document.body.classList.remove('disable-scroll')
     },
 
     updateCounter: function (counter, objectId) {
