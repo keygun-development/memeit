@@ -6,6 +6,9 @@
     :icon-right-first="'search'"
     :icon-right-second="'more_vert'"
     ></top-bar>
+    <a href="/downloads/Memeit.apk">
+      Download apk
+    </a>
     <md-tabs class="md-transparent" md-alignment="fixed">
       <md-tab @click="selected = 'memes'" id="tab-home" md-label="Memes"></md-tab>
       <md-tab @click="selected = 'fails'" id="tab-pages" md-label="Fails"></md-tab>
@@ -41,9 +44,6 @@
           :object-id="selectedObject.id"
       ></footer-tabs>
     </div>
-    <a href="/downloads/Memeit.apk">
-      Download apk
-    </a>
     <footer-tabs
         :icons="opened ? openedIcons : closedIcons"
         :object-id="selectedObject.id"
