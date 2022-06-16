@@ -1,8 +1,5 @@
 <template>
   <div id="app">
-    <div v-if="offline">
-      Je bent offline
-    </div>
     <top-bar
     :menu-icon="'menu'"
     :menu-title="'Home'"
@@ -44,6 +41,9 @@
           :object-id="selectedObject.id"
       ></footer-tabs>
     </div>
+    <a href="/downloads/Memeit.apk">
+      Download apk
+    </a>
     <footer-tabs
         :icons="opened ? openedIcons : closedIcons"
         :object-id="selectedObject.id"
@@ -65,7 +65,6 @@ export default {
       objects: objects,
       selectedObject: [],
       opened: false,
-      offline: false,
       openedIcons: [
         {
           "icon": "thumb_up",
